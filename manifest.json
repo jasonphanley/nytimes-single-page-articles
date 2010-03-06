@@ -1,0 +1,21 @@
+{
+  "name": "Single Page Articles for New York Times",
+  "version": "1",
+  "description": "Always shows New York Times articles on a single page. No need to click next anymore.",
+  "icons": {
+    "32": "t32.png",
+    "48": "t48.png",
+    "128": "t128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.nytimes.com/*", "http://travel.nytimes.com/*"],
+      "js": ["redirect-to-single-page-article.js"],
+      "run_at": "document_start"
+    } , {
+      "matches": ["http://*.nytimes.com/*"],
+      "js": ["single-page-article-links.js"],
+      "all_frames": true
+    }
+  ]
+}

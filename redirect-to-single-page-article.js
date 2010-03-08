@@ -5,6 +5,7 @@ if (match) {
 	var query = match[1];
 	var fragment = match[2];
 	if ((!query || query.indexOf('pagewanted=') == -1) && !fragment) {
-		window.location = window.location + (query ? '&' : '?' ) + 'pagewanted=all';
+		var url = window.location + (query ? '&' : '?' ) + 'pagewanted=all';
+		window.location.replace(url);
 	}
 }

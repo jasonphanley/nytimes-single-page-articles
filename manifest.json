@@ -1,6 +1,6 @@
 {
   "name": "Single Page Articles for New York Times",
-  "version": "2",
+  "version": "3",
   "description": "Always shows New York Times articles on a single page. No need to click next anymore.",
   "icons": {
     "32": "t32.png",
